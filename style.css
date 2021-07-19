@@ -1,0 +1,80 @@
+body {
+    height: 100%;
+    background-color: #D3D3D3;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #app-container {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  
+  #drawing-container{
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #drawing-container canvas{
+    margin: 0;
+    padding: 0;
+  }
+  
+  #control-container {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+    z-index: 10;
+  }
+  
+  #control-toggles{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  
+  #control-toggles div{
+    font-size: 18pt;
+  }
+  
+  #control-toggles div input{
+    width: 20px;
+    height: 20px;
+  }
+  
+  #control-container button{
+    margin: 5px;
+    font-size: 18pt;
+  }
+  
+  #camera-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #loading-icon {
+    position:fixed;
+    display:none;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;
+    z-index: 20;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
