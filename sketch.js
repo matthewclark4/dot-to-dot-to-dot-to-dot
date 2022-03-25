@@ -2,7 +2,7 @@
 const LINE_SPEED = 2; //
 const LINE_THICKNESS = 15; // Diameter of each line segment
 
-const DOT_CUTOFF = 50; // (Affects length of the tail) Number of dots on segment before we stop drawing it, higher values will mean worse performance
+const DOT_CUTOFF = 20; // (Affects length of the tail) Number of dots on segment before we stop drawing it, higher values will mean worse performance
 const DOT_SIZE = 2; // (Affects how fast the tail will fade) Diameter of each black dot
 const COLOR_DIFF_THRESHOLD = 10; // The lower this is the closer to the target colour the pixel must be (black currently)
 const SAMPLING_ACCURACY = 2; // Number of pixels between each sample taken from image to check colour.
