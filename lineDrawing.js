@@ -70,7 +70,7 @@ class FadingPoint {
     constructor(pos) {
         this.pos = pos;
         this.dots = [];
-        this.bgCol = color(255);
+        this.bgCol = color(0, 255, 0);
         this.width = LINE_THICKNESS;
         this.complete = false;
     }
@@ -115,7 +115,7 @@ class Dot {
         this.x = pos.x;
         this.y = pos.y;
         this.width = DOT_SIZE;
-        this.color = color(0);
+        this.color = color(0, 255, 0);
     }
 
     draw() {
